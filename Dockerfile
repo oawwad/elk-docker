@@ -122,6 +122,7 @@ ADD ./30-output.conf /etc/logstash/conf.d/30-output.conf
 
 # patterns
 ADD ./nginx.pattern ${LOGSTASH_HOME}/patterns/nginx
+ADD ./backlog ${LOGSTASH_HOME}/patterns/backlog
 RUN chown -R logstash:logstash ${LOGSTASH_HOME}/patterns
 
 
